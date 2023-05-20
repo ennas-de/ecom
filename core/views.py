@@ -15,6 +15,8 @@ import string
 import stripe
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
+# create views
+
 
 def create_ref_code():
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=20))
